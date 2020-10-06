@@ -2,6 +2,7 @@
   background-image: url("images/webeste_kep_02.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+    -webkit-background-size: cover;
 }
 
 /*.grid {
@@ -42,10 +43,17 @@
 }
 
 .Box {
+    box-sizing: border-box;
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-image: linear-gradient(transparent, white);
+    flex-basis: calc(20% - 40px);
+    background-image: linear-gradient(white, transparent);
+}
+
+.Box:hover {
+    background-color: #f8f9fa;
 }
 
 .App-link {
